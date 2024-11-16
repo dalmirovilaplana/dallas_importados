@@ -1,0 +1,51 @@
+/* app/assets/stylesheets/home.css */
+
+.carousel {
+    overflow: hidden;
+    /* background-color: #121212; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative; 
+    z-index: 1;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 40px;
+    animation: scroll 20s linear infinite;
+}
+
+.carousel-track img {
+    width: 80px; 
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.carousel-track img:hover {
+    opacity: 1; 
+}
+
+/* Animación para el desplazamiento continuo */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); 
+    }
+}
+
+/* Fondo de pantalla con gradiente (esto se coloca en el contenedor global si es necesario) */
+.background-overlay {
+    background: linear-gradient(145deg, #1C1C1C, #121212);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+}

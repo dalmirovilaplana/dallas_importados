@@ -1,0 +1,55 @@
+/* Contenedor para las cards */
+.productos-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Scroll horizontal si hay muchas cards */
+    padding: 20px 0;
+    scrollbar-width: thin; /* Scrollbar más delgado (para Firefox) */
+    justify-content: center;
+  }
+  
+  /* Estilo de cada card */
+  .producto-card {
+    background-color: #1E1E1E; /* Fondo más claro para diferenciar de la página */
+    color: #EAEAEA;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .producto-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .producto-card img {
+    width: 180px; /* Ancho fijo */
+    height: 180px; /* Altura fija */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-radius: 5px;
+}
+
+  
+  .producto-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #FFFFFF;
+  }
+  
+  .ver-mas-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #D4AF37; /* Dorado suave */
+    color: #121212;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .ver-mas-btn:hover {
+    background-color: #B89E30; /* Un tono dorado más oscuro */
+  }
+  

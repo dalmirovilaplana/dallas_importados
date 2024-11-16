@@ -1,0 +1,91 @@
+.social-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start; /* Alinea las cards al inicio */
+  flex-wrap: nowrap; /* Evita que las cards se ajusten en varias filas */
+  padding: 2rem 1rem;
+  overflow-x: auto; /* Activa el scroll horizontal si es necesario */
+  scrollbar-width: thin; /* Hace que el scroll sea más delgado en Firefox */
+}
+   
+  .social-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+  }
+   
+  .social-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  }
+   
+  .social-logo {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+  }
+   
+  .social-card:hover .social-logo {
+    transform: scale(1.1);
+  }
+   
+  .social-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+   
+  .social-button:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  }
+   
+  .instagram {
+    background: linear-gradient(135deg, rgba(240, 148, 51, 0.8), rgba(230, 104, 60, 0.8), rgba(220, 39, 67, 0.8), rgba(204, 35, 102, 0.8), rgba(188, 24, 136, 0.8));
+  }
+   
+  .facebook {
+    background: linear-gradient(135deg, #1877f2, #3b5998);
+  }
+   
+  .catalogo {
+    background: linear-gradient(135deg, #34e89e, #0f3443);
+  }
+   
+  .social-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+   
+  .social-card:hover::before {
+    opacity: 1;
+  }
+  .whatsapp {
+    background: linear-gradient(135deg, #25D366, #128C7E); 
+  }
+ 
